@@ -1,0 +1,11 @@
+.header {
+  background-color: $prime-color;
+}
+
+.header--line {
+  border-bottom: 1px solid $border-color;
+}
+
+.header__container {
+  @include position-flex();
+}

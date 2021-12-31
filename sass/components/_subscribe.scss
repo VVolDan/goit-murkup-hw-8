@@ -1,0 +1,22 @@
+.subscribe {
+  @include position-flex();
+}
+
+.subscribe__input {
+  margin-right: 12px;
+  padding-left: 16px;
+  height: 50px;
+  width: 358px;
+  @include bordered($color: rgba(255, 255, 255, 0.3));
+  border-radius: 4px;
+  background-color: transparent;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  &:focus {
+    border-color: $accent-color;
+  }
+}

@@ -1,0 +1,32 @@
+.clients {
+  display: flex;
+}
+
+.clients__item {
+  flex-basis: calc(100% / 6);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__link {
+  display: flex;
+
+  transition: background-color $effect, color $effect;
+
+  @include bordered($color: rgba($button-color, 1));
+  padding: 16px 32px;
+  border-radius: 4px;
+
+  background-color: $prime-color;
+  color: rgba($button-color, 1);
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

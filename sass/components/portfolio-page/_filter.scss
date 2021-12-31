@@ -1,0 +1,8 @@
+.filter {
+  @include position-flex($jc: center);
+  margin-bottom: 50px;
+}
+
+.filter__item:not(:first-child) {
+  margin-left: 8px;
+}

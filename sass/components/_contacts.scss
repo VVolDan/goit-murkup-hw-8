@@ -1,0 +1,55 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts__link {
+  padding: 32px 0;
+
+  transition: color $effect;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $text-color;
+  @include position-flex();
+
+  @extend %h-f;
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+// -------------Secondary-contacts
+
+.secondary-contacts {
+  margin-top: 20px;
+}
+
+.secondary-contacts__map {
+  font-style: normal;
+  @extend %font-parameters;
+  color: $prime-color;
+  transition: color $effect;
+
+  @extend %h-f;
+}
+
+.secondary-contacts__link {
+  display: inline-block;
+  margin-top: 9px;
+
+  font-style: normal;
+  @extend %font-parameters;
+  color: rgba($prime-color, 0.6);
+  transition: color $effect;
+
+  @extend %h-f;
+}

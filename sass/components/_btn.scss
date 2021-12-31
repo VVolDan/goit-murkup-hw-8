@@ -1,0 +1,89 @@
+.main-btn {
+  padding: 10px 32px;
+  min-width: 200px;
+  min-height: 50px;
+  margin: 0 auto 0 auto;
+  display: block;
+  transition: background-color $effect;
+  background-color: $accent-color;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $prime-color;
+  border: none;
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    background-color: rgba($accent-color, 0.85);
+  }
+}
+
+.main-btn--flex {
+  @include position-flex();
+}
+
+.main-btn__icon {
+  fill: currentColor;
+  margin-left: 10px;
+}
+
+.close-btn {
+  transition: background-color $effect, color $effect;
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  @include bordered($color: rgba(0, 0, 0, 0.1));
+  border-radius: 50%;
+  background-color: $prime-color;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $prime-color;
+    background-color: $accent-color;
+  }
+}
+
+.close-icon {
+  fill: currentColor;
+}
+
+/* ----------------------Secondary-btn------------------------- */
+
+.secondary-btn {
+  padding: 6px 22px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $section-title-color;
+  border: none;
+  background-color: $background-btn-color;
+  border-radius: 4px;
+  transition: background-color $effect, color $effect, box-shadow $effect;
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: $accent-color;
+    color: $prime-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.main-btn--flex {
+  @include position-flex();
+}

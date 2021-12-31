@@ -1,0 +1,54 @@
+.nav {
+  margin-left: 93px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  display: block;
+  padding: 32px 0;
+
+  transition: background-color $effect, color $effect;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $section-title-color;
+
+  @extend %h-f;
+}
+
+.nav__link--current {
+  position: relative;
+  display: block;
+  color: $accent-color;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 4px;
+    width: 100%;
+    background-color: $accent-color;
+
+    display: block;
+    content: "";
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+  }
+}

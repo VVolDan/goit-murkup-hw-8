@@ -1,0 +1,53 @@
+.input-field {
+  margin-bottom: 10px;
+}
+
+.input-field__input {
+  width: 100%;
+  padding-left: 35px;
+  height: 40px;
+  @include bordered($color: rgba(33, 33, 33, 0.2));
+  border-radius: 4px;
+  outline: none;
+
+  @extend %font-parameters;
+  transition: border-color $effect;
+
+  &:focus + .input-field__icon {
+    fill: $accent-color;
+  }
+
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.input-field__group {
+  position: relative;
+}
+
+.input-field__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill $effect;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $section-title-color;
+  margin-bottom: 12px;
+}
+
+.label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  display: block;
+}
