@@ -21,6 +21,9 @@
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     width: calc((100% - 2 * 30px) / 2);
   }
+  @media screen and (max-width: 767px) {
+    width: calc(100% - 30px);
+  }
 }
 
 .gallery__title {
@@ -68,7 +71,9 @@
 }
 
 .gallery__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow $effect;
 
   &:hover {
@@ -81,4 +86,5 @@
   padding: 20px 24px;
   @include bordered($width: 2px, $color: $portfolio-border-color);
   border-top: none;
+  flex-grow: 1;
 }

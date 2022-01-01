@@ -1,8 +1,6 @@
 .clients {
   display: flex;
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
   margin: -15px;
 }
 
@@ -15,10 +13,13 @@
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     width: calc((100% - 3 * 30px) / 3);
   }
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 2 * 30px) / 2);
+  }
 }
 
 .clients__link {
-  display: flex;
+  @include position-flex($jc: center);
 
   transition: background-color $effect, color $effect;
 
