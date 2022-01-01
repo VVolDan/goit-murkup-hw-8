@@ -1,10 +1,12 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .gallery__item {
   background: $prime-color;
+  margin: 15px;
 
   &:hover .gallery__overlay,
   &:focus .gallery__overlay {
@@ -12,12 +14,12 @@
     opacity: 1;
   }
 
-  &:nth-last-child(n -3) {
-    margin-bottom: 30px;
+  @media screen and (min-width: 1024px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
   }
 
-  &:not(:nth-child(3n)) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    width: calc((100% - 2 * 30px) / 2);
   }
 }
 

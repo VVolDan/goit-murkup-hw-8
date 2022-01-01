@@ -4,15 +4,22 @@
 
 .team-list {
   display: flex;
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    flex-wrap: wrap;
+  }
+  margin: -15px;
 }
 
 .team-list__item {
-  width: calc(100% / 4);
   @extend %shadow;
   border-radius: 0px 0px 4px 4px;
+  margin: 15px;
+  @media screen and (min-width: 1024px) {
+    flex-basis: calc((100%-4 * 30px) / 4);
+  }
 
-  &:not(:first-child) {
-    margin-left: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    width: calc((100% - 2 * 30px) / 2);
   }
 }
 
