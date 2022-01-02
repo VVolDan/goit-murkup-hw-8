@@ -1,6 +1,14 @@
 .checkbox-field {
   margin-bottom: 30px;
   @include position-flex($jc: center);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-field__input {
@@ -12,7 +20,6 @@
 
 .checkbox-field__label {
   @include position-flex();
-  @extend %font-parameters;
 }
 
 .checkbox-field__icon {
@@ -39,8 +46,6 @@
 
 .checkbox-field__conditions {
   margin-left: 5px;
-
-  @extend %font-parameters;
 
   color: $accent-color;
   text-decoration: underline;

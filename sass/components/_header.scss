@@ -8,4 +8,7 @@
 
 .header__container {
   @include position-flex();
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }

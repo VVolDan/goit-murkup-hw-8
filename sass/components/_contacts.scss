@@ -4,6 +4,10 @@
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     flex-direction: column;
   }
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+    margin: auto 0 64px 0;
+  }
 }
 
 .contacts__item:not(:last-child) {
@@ -11,16 +15,23 @@
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     margin: 0 0 10px 0;
   }
+  @media screen and (max-width: 767px) {
+    margin: 32px 0 0 0;
+  }
 }
 
 .contacts__link {
-  padding: 32px 0;
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
   transition: color $effect;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: $text-color;
   @include position-flex();
@@ -32,7 +43,20 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  &.contacts__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+}
+
 .contacts__icon {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   margin-right: 10px;
   fill: currentColor;
 }
