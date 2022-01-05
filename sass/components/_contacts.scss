@@ -44,11 +44,8 @@
 }
 
 @media screen and (max-width: 767px) {
-  &.contacts__tel {
-    font-weight: 500;
+  &.contacts__link--phone {
     font-size: 34px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
     color: $accent-color;
   }
 }

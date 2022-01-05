@@ -2,16 +2,16 @@
   @include position-flex($jc: center);
 
   @media screen and (min-width: 1024px) {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
   @media screen and (max-width: 767px) {
     justify-content: start;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
   margin: -8px;
 }

@@ -7,22 +7,20 @@
 
 .doing-list {
   display: flex;
+  margin: -15px;
 }
 
 .doing-list__item {
-  width: calc(100% - 60px / 3);
   position: relative;
-
-  &::not(:first-child) {
-    margin-left: 30px;
-  }
+  margin: 15px;
+  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
 .doing-list__description-wrapper {
   position: absolute;
+  width: 100%;
   bottom: 0;
   padding: 27px 0;
-  width: calc(100% - 20px);
   background-color: rgba($doing-shade-color, 0.8);
 }
 

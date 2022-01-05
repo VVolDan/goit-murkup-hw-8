@@ -34,8 +34,10 @@
   @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
-  margin-left: 70px;
-  padding-top: 12px;
+  @media screen and (min-width: 1024px) {
+    margin-left: 70px;
+    padding-top: 12px;
+  }
 }
 
 .footer__title {
@@ -49,10 +51,13 @@
 }
 
 .footer__third-block {
-  margin-left: auto;
-  padding-top: 12px;
   @media screen and (max-width: 1023px) {
     text-align: center;
     margin: 60px 0 0 0;
+    width: 100%;
+  }
+  @media screen and (min-width: 1023px) {
+    margin-left: auto;
+    padding-top: 12px;
   }
 }
