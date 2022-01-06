@@ -12,11 +12,11 @@
   @extend %shadow;
   border-radius: 0px 0px 4px 4px;
   margin: 15px;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 4 * 30px) / 4);
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 2 * 30px) / 2);
   }
 

@@ -1,7 +1,6 @@
 .contacts {
   display: flex;
-  margin-left: auto;
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-direction: column;
   }
   @media screen and (max-width: 767px) {
@@ -10,9 +9,15 @@
   }
 }
 
+.contacts--margin {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+}
+
 .contacts__item:not(:last-child) {
   margin-right: 30px;
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: 0 0 10px 0;
   }
   @media screen and (max-width: 767px) {
@@ -38,15 +43,23 @@
 
   @extend %h-f;
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  &.contacts__link--phone {
-    font-size: 34px;
+  &.contacts__link--color {
     color: $accent-color;
+  }
+  &.contacts__link--big-size {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  &.contacts__link--color {
+    font-size: 27px;
   }
 }
 

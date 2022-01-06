@@ -1,10 +1,10 @@
 .main-section {
-  padding: 118px 15px;
+  padding: 118px 0;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $background-footer-color;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     padding: 200px 0;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -22,7 +22,7 @@
         url("../images/hero-desktop@2x.jpg");
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -69,7 +69,7 @@
   text-transform: uppercase;
   color: $prime-color;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
   }

@@ -25,12 +25,19 @@
 .menu-social {
   margin: 0 -10px;
   display: flex;
+  flex-wrap: wrap;
   @media screen and (min-width: 768px) {
     display: none;
+  }
+  @media screen and (max-width: 480px) {
+    margin-bottom: -10px;
   }
 }
 
 .menu-social__item {
+  @media screen and (max-width: 480px) {
+    margin-bottom: 10px;
+  }
   &:not(:last-child) {
     border-right: 1px solid rgba($text-color, 0.2);
   }
